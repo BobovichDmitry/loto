@@ -38,15 +38,22 @@ class Lotocard:
             card3.insert(random.randint(0, 9), ' ')
         self.card = card1 + card2 + card3
 
-    def printcard(self):
+    def __eq__(self, other):
+        """
+        сравнение объектов
+        """
+        return self.card == other.card
+    def __str__(self):
+        return f'{self.card[0]} {self.card[1]} {self.card[2]} {self.card[3]} {self.card[4]} {self.card[5]} {self.card[6]} {self.card[7]} {self.card[8]} \n {self.card[9]} {self.card[10]} {self.card[11]} {self.card[12]} {self.card[13]} {self.card[14]} {self.card[15]} {self.card[16]} {self.card[17]} \n {self.card[18]} {self.card[19]} {self.card[20]} {self.card[21]} {self.card[22]} {self.card[23]} {self.card[24]} {self.card[25]} {self.card[26]}'
+    #def printcard(self):
         # print("**************************")
-        print(
-            f'{self.card[0]} {self.card[1]} {self.card[2]} {self.card[3]} {self.card[4]} {self.card[5]} {self.card[6]} {self.card[7]} {self.card[8]} ')
-        print(
-            f'{self.card[9]} {self.card[10]} {self.card[11]} {self.card[12]} {self.card[13]} {self.card[14]} {self.card[15]} {self.card[16]} {self.card[17]} ')
-        print(
-            f'{self.card[18]} {self.card[19]} {self.card[20]} {self.card[21]} {self.card[22]} {self.card[23]} {self.card[24]} {self.card[25]} {self.card[26]}')
-        print("________________________________")
+       # print(
+       #     f'{self.card[0]} {self.card[1]} {self.card[2]} {self.card[3]} {self.card[4]} {self.card[5]} {self.card[6]} {self.card[7]} {self.card[8]} ')
+       # print(
+       #     f'{self.card[9]} {self.card[10]} {self.card[11]} {self.card[12]} {self.card[13]} {self.card[14]} {self.card[15]} {self.card[16]} {self.card[17]} ')
+       # print(
+       #     f'{self.card[18]} {self.card[19]} {self.card[20]} {self.card[21]} {self.card[22]} {self.card[23]} {self.card[24]} {self.card[25]} {self.card[26]}')
+       # print("________________________________")
 
     # print()
     # def proverkanumber(self, number):
