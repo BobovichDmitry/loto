@@ -1,6 +1,5 @@
 import random
 
-
 def strike(text):
     result = ''
     for c in text:
@@ -38,13 +37,6 @@ class Lotocard:
             card2.insert(random.randint(0, 9), ' ')
             card3.insert(random.randint(0, 9), ' ')
         self.card = card1 + card2 + card3
-
-        # print('Карточка создана')
-        # print(f'{card1}\n{card2}\n{card3}')
-        # print(f'{card[0]} {card[1]} {card[2]} {card[3]} {card[4]} {card[5]} {card[6]} {card[7]} {card[8]} ')
-        # print(f'{card[9]} {card[10]} {card[11]} {card[12]} {card[13]} {card[14]} {card[15]} {card[16]} {card[17]} ')
-        # print(f'{card[18]} {card[19]} {card[20]} {card[21]} {card[22]} {card[23]} {card[24]} {card[25]} {card[26]}')
-        # return card
 
     def printcard(self):
         # print("**************************")
